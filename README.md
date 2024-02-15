@@ -4,7 +4,7 @@ Debian sources.list dotfiles
 Working Debian 6 (Squeeze) - Debian 12 (Bookworm) sources.list dotfiles to replace the sources.list in your /etc/apt folder on your Debian server.
 
 ## Usage:
-Navigate to the `/etc/apt` folder.Backup your current `sources.list` file.
+Navigate to the `/etc/apt` folder.
 ```bash
 cd /etc/apt
 ```
