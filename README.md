@@ -21,9 +21,10 @@ mv sources.list sources.list_old
 Retrieve the new `sources.list` file based on your Debian server version.
 
 **For Debian 6 (Squeeze)**
-```bash
-wget https://raw.githubusercontent.com/tkne/debian-sources/main/sources.list.debian6 -O /etc/apt/sources.list
-```
+> [!IMPORTANT]
+> Please update manually.
+> 
+> Reason is, OpenSSL 0.9.8 supports only TLS 1.0 and lower protocol versions (i.e. SSL 3.0), so there is no way to connect with a TLS 1.0 client to github.com, which itself does not longer support the TLS 1.0 protocol.
 
 </br>
 
