@@ -1,7 +1,6 @@
-Debian sources.list dotfiles
-======
+# Debian sources.list dotfiles
 
-Working Debian 6 (Squeeze) - Debian 12 (Bookworm) sources.list dotfiles to replace the sources.list in your /etc/apt folder on your Debian server.
+> Working Debian 6 (Squeeze) - Debian 12 (Bookworm) sources.list dotfiles to replace the sources.list in your /etc/apt folder on your Debian server.
 
 ## Usage:
 Navigate to the `/etc/apt` folder.
@@ -20,7 +19,7 @@ mv sources.list sources.list_old
 
 Retrieve the new `sources.list` file based on your Debian server version.
 
-**For Debian 6 (Squeeze)**
+### For Debian 6 (Squeeze)
 > [!IMPORTANT]
 > Please update manually.
 > 
@@ -28,42 +27,42 @@ Retrieve the new `sources.list` file based on your Debian server version.
 
 </br>
 
-**For Debian 7 (Wheezy)**
+### For Debian 7 (Wheezy)
 ```bash
 wget https://raw.githubusercontent.com/tkne/debian-sources/main/sources.list.debian7 -O /etc/apt/sources.list
 ```
 
 </br>
 
-**For Debian 8 (Jessie)**
+### For Debian 8 (Jessie)
 ```bash
 wget https://raw.githubusercontent.com/tkne/debian-sources/main/sources.list.debian8 -O /etc/apt/sources.list
 ```
 
 </br>
 
-**For Debian 9 (Stretch)**
+### For Debian 9 (Stretch)
 ```bash
 wget https://raw.githubusercontent.com/tkne/debian-sources/main/sources.list.debian9 -O /etc/apt/sources.list
 ```
 
 </br>
 
-**For Debian 10 (Buster)**
+### For Debian 10 (Buster)
 ```bash
 wget https://raw.githubusercontent.com/tkne/debian-sources/main/sources.list.debian10 -O /etc/apt/sources.list
 ```
 
 </br>
 
-**For Debian 11 (Bullseye)**
+### For Debian 11 (Bullseye)
 ```bash
 wget https://raw.githubusercontent.com/tkne/debian-sources/main/sources.list.debian11 -O /etc/apt/sources.list
 ```
 
 </br>
 
-**For Debian 12 (Bookworm)**
+### For Debian 12 (Bookworm)
 ```bash
 wget https://raw.githubusercontent.com/tkne/debian-sources/main/sources.list.debian12 -O /etc/apt/sources.list
 ```
@@ -81,7 +80,7 @@ apt-get update
 
 </br>
 
-Upgrade from the new list:
+Upgrade the installed packages on your system:
 ```bash
 apt upgrade
 ```
@@ -92,4 +91,5 @@ apt-get upgrade
 
 </br>
 
-You can also edit and/or update your existing `sources.list` file manually if you prefer to do it that way.
+> [!TIP]
+> You can also edit and/or update your existing `sources.list` file manually if you prefer to do it that way.
